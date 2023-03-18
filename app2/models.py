@@ -20,3 +20,6 @@ class student(models.Model):
     mobile_num = models.IntegerField()
     address = models.CharField(max_length=100)
     salary = models.IntegerField()
+
+    class Meta:
+        db_table = "student"
